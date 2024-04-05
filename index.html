@@ -14,29 +14,45 @@
 </head>
    
 <body>
-    <div class ="navbar">
-        <img src="assets/logo.svg" class="logo">
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <header>
+        <img src="/assets/logo.svg" class="logo">
         <nav>
-            <ul>
-                <li><a href="">INÍCIO</a></li>
-                <li><a href="">FILMES</a></li>
-                <li><a href="">SÉRIES</a></li>
+            <ul class="navbar">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Séries</a></li>
             </ul>
         </nav>
-        <i class="fa-regular fa-bookmark" style="color: white;"></i>
-        <i class="fa-regular fa-user" style="color: white;"></i>
-    </div>
+        
+        <nav>
+            <ul class="icons">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-regular fa-bookmark"></i></li>
+                <li><i class="fa-regular fa-user"></i></li>
+            </ul>
+        </nav>
+    </header>
 
-
-    <div class="block">
+    <!-- BLOCO DO FILME -->
+    <div class="container">
         <h1>Nome do Filme</h1>
-        <i class="fa-sharp fa-solid fa-star" style="color: #E6B91E;"></i>
-        <i class="fa-sharp fa-solid fa-star" style="color: #E6B91E;"></i>
-        <i class="fa-sharp fa-solid fa-star" style="color: #E6B91E;"></i>
-        <i class="fa-sharp fa-solid fa-star" style="color: #E6B91E;"></i>
-        <i class="fa-sharp fa-solid fa-star" style="color: #E6B91E;"></i>
-        <h5>2024</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel convallis metus. Ut iaculis et tortor quis rutrum. Vestibulum vitae pharetra leo. Integer vel lorem et nulla pellentesque ullamcorper ornare in mi. Etiam sem ante, viverra non lectus in, consectetur.
+        <div class="flex-container">
+            <div class="stars">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+            </div>
+            
+            <div class="desc">
+                <p>2h 10min</p>
+                <p>2024</p>
+            </div>
+        </div>
+        <p>
+            Lor em ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel convallis metus. Ut iaculis et tortor quis rutrum. Vestibulum vitae pharetra leo. Integer vel lorem et nulla pellentesque ullamcorper ornare in mi. Etiam sem ante, viverra non lectus in, consectetur.
         </p>
     </div>
 
