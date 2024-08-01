@@ -1,55 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <title>Premium</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/styles.css">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/fde0a8fd48.js" crossorigin="anonymous"></script>
-</head>
-   
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/fde0a8fd48.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/extra.css" />
+  </head>
+
+  <body>
+    <div class="bg">
+      <img src="https://wallpapercave.com/wp/wp3032136.jpg" alt="" />
+    </div>
     <!-- BARRA DE NAVEGAÇÃO -->
     <header>
-        <img src="/assets/logo.svg" class="logo">
-        <nav>
-            <ul class="navbar">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Séries</a></li>
-            </ul>
-        </nav>
-        
-        <nav>
-            <ul class="icons">
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li><i class="fa-regular fa-bookmark"></i></li>
-                <li><i class="fa-regular fa-user"></i></li>
-            </ul>
-        </nav>
+      <div class="logo-box"><img src="/assets/logo.svg" class="logo" /></div>
+
+      <nav class="navbar">
+        <div class="nav-box"><a href="LINK">Início</a></div>
+        <div class="nav-box"><a href="LINK">Filmes</a></div>
+        <div class="nav-box"><a href="LINK">Séries</a></div>
+      </nav>
+
+      <div class="icons-box">
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Buscar filmes ou séries"
+            class="search-button"
+          />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="icon"><i class="fa-regular fa-bookmark"></i></div>
+        <div class="icon"><i class="fa-regular fa-user"></i></div>
+      </div>
     </header>
 
     <!-- BLOCO DO FILME -->
-    <div class="container">
-        <h1>Nome do Filme</h1>
-        <div class="flex-container">
-            <div class="stars">
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-                <i class="fa-sharp fa-solid fa-star"></i>
-            </div>
-            
-            <div class="desc">
-                <p>2h 10min</p>
-                <p>2024</p>
-            </div>
-        </div>
-        <p>
-            Lor em ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel convallis metus. Ut iaculis et tortor quis rutrum. Vestibulum vitae pharetra leo. Integer vel lorem et nulla pellentesque ullamcorper ornare in mi. Etiam sem ante, viverra non lectus in, consectetur.
-        </p>
-    </div>
+    <main>
+      <div class="film-container">
+        <div class="directors">Fernando Meirelles</div>
+        <h1>Cidade de Deus</h1>
+        <div class="upper-container">
+          <div class="stars">
+            <div class="star"><img src="/assets/star.svg" alt="star" /></div>
+            <div class="star"><img src="/assets/star.svg" alt="star" /></div>
+            <div class="star"><img src="/assets/star.svg" alt="star" /></div>
+            <div class="star"><img src="/assets/star.svg" alt="star" /></div>
+            <div class="star"><img src="/assets/star.svg" alt="star" /></div>
+          </div>
 
-</body>
+          <div class="upper-info">
+            <div class="film-lenght">2h 10min</div>
+            <div class="date">2024</div>
+            <div class="age-rating">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/DJCTQ_-_16.svg/400px-DJCTQ_-_16.svg.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="lower-info">
+          <p class="description">
+            Buscapé é um jovem pobre, negro e sensível, que cresce em um
+            universo de muita violência. Ele vive na Cidade de Deus, favela
+            carioca conhecida por ser um dos locais mais violentos do Rio.
+            Amedrontado com a possibilidade de se tornar um bandido, Buscapé é
+            salvo de seu destino por causa de seu talento como fotógrafo, o qual
+            permite que siga carreira na profissão. É por meio de seu olhar
+            atrás da câmera que ele analisa o dia a dia da favela em que vive,
+            onde a violência aparenta ser infinita.
+          </p>
+          <a class="trailer-button" href="TRAILER_LINK" target="_blank">
+            <img class="play-icon" src="/assets/play.svg" />
+            Assistir Trailer
+          </a>
+        </div>
+      </div>
+      
+      <section class="extra">
+        <div class="title-container">
+          <button>Relacionados</button>  
+          <button>Extra</button>  
+        </div>
+        <div class="related">
+          <div><img src="https://a.ltrbxd.com/resized/sm/upload/hf/o9/fn/p4/adogswill-ms-0-1000-0-1500-crop.jpg" alt="Movie Cover"></div>
+          <div><img src="https://a.ltrbxd.com/resized/film-poster/7/0/5/2/2/1/705221-furiosa-a-mad-max-saga-0-1000-0-1500-crop.jpg" alt="Movie Cover"></div>
+          <div><img src="https://a.ltrbxd.com/resized/film-poster/6/1/7/4/4/3/617443-dune-part-two-0-1000-0-1500-crop.jpg" alt="Movie Cover"></div>
+          <div><img src="https://a.ltrbxd.com/resized/film-poster/5/7/8/7/7/4/578774-kingdom-of-the-planet-of-the-apes-0-1000-0-1500-crop.jpg" alt="Movie Cover"></div>
+          <div><img src="https://a.ltrbxd.com/resized/sm/upload/8v/f1/qw/aa/bg7K6VtUG7Ew70gQj6SSroD5d4R-0-1000-0-1500-crop.jpg" alt="Movie Cover"></div>
+          <div><img src="https://a.ltrbxd.com/resized/sm/upload/90/gn/c7/9k/qAwFbszz0kRyTuXmMeKQZCX3Q2O-0-1000-0-1500-crop.jpg" alt="Movie Cover"></div>
+          <div><img src="https://a.ltrbxd.com/resized/sm/upload/t3/qn/vs/p5/s5fH3GqFcHbi2F0NSBSh4KRNTc0-0-1000-0-1500-crop.jpg" alt="Movie Cover"></div>
+        </div>
+      </section>
+    </main>
+
+
+  </body>
 </html>
