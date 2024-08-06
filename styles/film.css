@@ -1,0 +1,53 @@
+body {
+  background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%,
+    transparent 20%,
+    rgb(23, 28, 46) 50%),
+  url("https://istoe.com.br/wp-content/uploads/2022/08/cidade-de-deus.jpg");
+
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.page-content {
+  margin-top: 24rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.content-directors {
+  font-size: var(--size-m);
+  display: flex;
+  gap: 1rem;
+}
+.content-title {
+  font-size: var(--size-xxxl);
+  font-family: var(--alt-ff);
+}
+.content-info {
+  font-size: var(--size-s);
+  display: flex;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-wrapper{
+  display: flex;
+  height: inherit;
+  gap: 1rem;
+  align-items: center;
+}
+.content-genres a {
+  padding: 0.25rem;
+}
+.age-rating {
+  object-fit: cover;
+  height: 100%;
+}
