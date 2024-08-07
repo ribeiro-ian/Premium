@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1001 1001">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #f55e00;
+      }
+    </style>
+  </defs>
+  <g id="favicon">
+    <rect class="cls-2" width="1001" height="1001" rx="100" ry="100"/>
+    <polygon id="ICON" class="cls-1" points="744 292.86 744 708.14 653.4 708.14 653.4 433.09 638.17 458.83 604.1 503.49 556.92 566.18 509.86 501.74 490.43 501.74 442.4 568.19 394.66 504.06 359.91 458.07 347.6 436.77 347.6 708.14 257 708.14 257 292.86 346.32 292.86 432.49 409.76 490.43 329.6 509.86 329.6 568.05 409.29 654.3 292.86 744 292.86"/>
+  </g>
+</svg>

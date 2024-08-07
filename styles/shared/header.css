@@ -1,37 +1,47 @@
-.header{
+.header {
+  position: sticky;
+
+  top: 1rem;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  
+
   align-items: center;
-  height: 2rem;
   gap: 1rem;
   /* background-color: yellowgreen; */
 
-  /* margin-top: 0.5rem; */
-  border-radius: 1rem;
+  --r: 1rem;
+}
+.header.glass {
   padding: 1rem;
+  margin-inline: -1rem;
 }
-.header > *{
+.header > * {
   display: flex;
-  height: 100%;
 }
-#logo{
-  height: 75%;
+#logo {
+  height: 2rem;
 }
-.navbar{
+.navbar {
   justify-self: center;
 }
-.nav-link{
+.nav-link {
   --clr: var(--main-text-clr);
   --spacing: var(--size-xxs);
   color: var(--clr);
-  
+  font-family: var(--alt-ff);
+  font-size: var(--size-l);
+  font-weight: 600;
+  letter-spacing: 2px;
+
   text-transform: uppercase;
   padding: var(--spacing) 1rem;
 }
+.nav-link > * {
+  position: relative;
+}
 
 .nav-link:hover > *::after,
-.nav-link[active] > *::after{
+.nav-link[active] > *::after {
   content: "";
   position: absolute;
   background-color: var(--clr);
@@ -41,31 +51,46 @@
   left: 0;
   bottom: calc(var(--spacing) * -1);
 }
-.nav-link:hover,
-.nav-link[active]{
-  --clr: var(--main-clr);
-  text-decoration: none;
+.nav-link:hover {
+  --clr: var(--sec-text-clr);
 }
-.nav-link > *{position: relative;}
+.nav-link[active] {
+  --clr: var(--main-clr);
+}
 
-.header-icons{
+/*  */
+.search-container {
+  position: relative;;
+  display: flex;
+}
+.search-bar,
+.search-icon {
+  color: var(--main-text-clr);
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search-bar {
+  display: none;
+  padding: 0.75rem;
+  padding-right: 4rem;
+}
+.search-container:focus .search-bar{
+  display: block;
+}
+.header-icons {
+  align-items: center;
   justify-content: end;
   gap: 0.5rem;
 }
-
-.header-icons .glass{
-  height: 100%;
-  aspect-ratio: 1;
-  
-  display: grid;
-  place-content: center;
+.icon-box,
+.search-icon {
+  display: flex;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
-.header-icons a:hover{
-  background-color: var(--main-text-clr);
-  color: var(--bg-clr);
-}
-
-.header-icons svg{
+.header-icons svg {
   aspect-ratio: 1;
-  /* padding: var(--size-xs); */
+  font-size: 1rem;
+  padding: 12px;
 }

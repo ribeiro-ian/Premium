@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 4rem;
+  /* background-color: black; */
+  padding: 2rem 5%;
+  width: 100%;
+}
+.footer-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-inline: auto;
+  
+  gap: 3rem;
+  font-size: 0.875rem;
+  align-items: center;
+}
+.footer-container{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+
+  gap: 2rem;
+}
+.footer-container ul{
+  
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  width: max-content;
+}
+.logo-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}

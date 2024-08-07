@@ -1,11 +1,11 @@
 body {
   background-image: 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%,
-    transparent 20%,
-    rgb(23, 28, 46) 50%),
-  url("https://istoe.com.br/wp-content/uploads/2022/08/cidade-de-deus.jpg");
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.75) .1%,
+    transparent 10%,
+    rgb(23, 28, 46) 45%),
+  url("https://images2.alphacoders.com/131/1317118.jpeg");
 
-  background-position: top;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -14,13 +14,13 @@ body {
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 1rem;
 }
 .content-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 .content-directors {
   font-size: var(--size-m);
@@ -30,6 +30,35 @@ body {
 .content-title {
   font-size: var(--size-xxxl);
   font-family: var(--alt-ff);
+}
+.content-btns{
+  display: flex;
+  gap: 1rem;
+}
+.content-btns .btn:hover{
+  transform: scale(1.05);
+}
+.content-btns svg{
+  font-size: 1.5rem;
+  aspect-ratio: 1;
+}
+.content-btn span{
+  display: flex;
+  padding: .75rem;
+  aspect-ratio: 1;
+}
+.content-btn{
+  height: max-content;
+}
+.play-btn{
+  font-family: Inter;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  padding-inline: 1.5rem;
+  gap: 0.75rem;
+  width: max-content;
+  font-size: 1.5rem;
 }
 .content-info {
   font-size: var(--size-s);
@@ -44,10 +73,58 @@ body {
   gap: 1rem;
   align-items: center;
 }
-.content-genres a {
-  padding: 0.25rem;
+.content-genres {
+  display: flex;
+  gap: 8px;
+}
+.genre {
+  --r: 8px;
+  padding: 4px 8px;
+}
+.genre:hover{
+  background-color: var(--main-clr);
+  color: var(--bg-clr);
+  border-color: var(--main-clr);
 }
 .age-rating {
   object-fit: cover;
   height: 100%;
+}
+.content-summary{
+  line-height: 1.5;
+}
+.extra{
+  display: grid;
+  gap: 1rem;
+  margin-top: 10rem;
+}
+.extra-nav{
+  width: 100%;
+  display: flex;
+  
+  gap: 2rem;
+  /* border-bottom: 2px solid var(--sec-bg-clr); */
+}
+.nav-btn{
+  --spacing: 0.5rem;
+  --clr: var(--sec-bg-clr);
+
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: var(--alt-ff);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--clr);
+}
+
+@media (max-width: 810px){
+  .content{
+    grid-template-columns: unset;
+  }
+  .content-info{
+    flex-direction: column;
+    align-items: start;
+  }
 }

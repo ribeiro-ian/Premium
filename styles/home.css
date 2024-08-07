@@ -1,0 +1,15 @@
+.page-content{
+  display: grid;
+  gap: 3rem;
+}
+
+.row-title{
+  font-size: 1.25rem;
+  font-family: var(--alt-ff);
+  font-weight: 600;
+}
+
+.home-row{
+  display: grid;
+  gap: 0.5rem
+}
