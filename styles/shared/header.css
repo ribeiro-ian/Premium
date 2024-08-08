@@ -20,6 +20,7 @@
 }
 #logo {
   height: 2rem;
+  aspect-ratio: unset;
 }
 .navbar {
   justify-self: center;
@@ -86,7 +87,6 @@
 .icon-box,
 .search-icon {
   display: flex;
-  border: 1px solid transparent;
   cursor: pointer;
 }
 .header-icons svg {
