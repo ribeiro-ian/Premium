@@ -1,9 +1,12 @@
+body::before{
+  background-image: url("https://images.alphacoders.com/135/thumb-1920-1354224.jpeg");
+}
 .page-content{
+  margin-top: 30vh;
   display: grid;
   gap: 3rem;
 }
-
-.row-title{
+.row-title {
   font-size: 1.25rem;
   font-family: var(--alt-ff);
   font-weight: 600;

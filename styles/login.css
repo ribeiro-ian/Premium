@@ -1,20 +1,21 @@
 body {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
-
+body::before{
+  content: none;
+}
 main {
-  display: grid;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  grid-template-areas:
-    ". header ."
-    ". content ."
-    "footer footer footer";
-  grid-template-rows: 5vh 90vh min-content;
 
-  justify-items: center;
+  margin-inline: auto;
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 main:before {
   content: ' ';
@@ -29,19 +30,23 @@ main:before {
   z-index: -1000;
   background-image: url("https://preview.redd.it/2jhtmqhg4mo81.png?width=1920&format=png&auto=webp&s=0d41709c3c478d2bcadfd8f2450271f175c0676f");
   background-position: center top -50%;
-  background-size: 103%;
-}
-.header{
-  margin-top: 2rem;
-  width: 100%;
+  background-size: 110%;
 }
 #logo{
   width: 12rem;
+  margin: 2rem 0 0 1rem;
+}
+.page-content{
+  display: flex;
+  place-content: center;
+  margin-top: 0;
+  height: 90vh;
 }
 .login-wrapper {
   align-self: center;
-  width: max(420px, 30%);
-  padding: 3rem;
+  width: 480px;
+  height: fit-content;
+  padding: 2rem;
   border-radius: 1.25rem;
 
   --clr: 67, 66, 102;
@@ -76,12 +81,12 @@ main:before {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.75rem;
 
-  color: var(--main-text-clr);
+  color: var(--text-clr);
   padding: 1rem;
   padding-right: 3rem;
 }
 .input-box input::placeholder {
-  color: var(--main-text-clr);
+  color: var(--text-clr);
 }
 .input-box svg {
   position: absolute;
@@ -119,5 +124,6 @@ main:before {
 }
 
 .footer{
-  background-color: var(--bg-clr);
+  margin-top: 8vh;
+  background-color: rgba(var(--bg-clr));
 }

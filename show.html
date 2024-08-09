@@ -4,22 +4,26 @@
     <title>Premium</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script src="https://kit.fontawesome.com/fde0a8fd48.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
     <link rel="stylesheet" href="/styles/shared/general.css" />
     <link rel="stylesheet" href="/styles/shared/header.css" />
     <link rel="stylesheet" href="/styles/shared/footer.css" />
-    <link rel="stylesheet" href="/styles/film.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="/styles/show.css" />
+    <script src="https://kit.fontawesome.com/fde0a8fd48.js" crossorigin="anonymous"></script>
+
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
   <body>
+    <div class="fade-out"></div>
     <main>
 
       <!-- BARRA DE NAVEGAÇÃO -->
       <header class="header">
-        <div>
-          <a href="home.html">
+        <div class="logo-wrapper">
+          <a class="logo-link" href="home.html">
             <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815 149.66">
             <g fill="currentColor">
               <path d="M0,2.66h20.6l2.65,22.23C29.1,10.07,41.77,0,60.68,0c28.17,0,46.32,20.33,46.32,57v2.66c0,35.91-19.47,54.53-46.7,54.53-17.96,0-30.06-8.17-36.3-21.47v56.94H0V2.66ZM82,59.17v-2.29c0-23.49-12.03-35.9-29.02-35.9-18.14,0-29.98,13.94-29.98,35.52v1.91c0,21.19,11.27,34.75,29.4,34.75s29.6-12.22,29.6-33.99Z"/>
@@ -33,6 +37,8 @@
             </svg>
           </a>
         </div>
+
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
 
         <nav class="navbar">
           <a class="nav-link" href="home.html"><span class="text-xxl">Início</span></a>
@@ -48,6 +54,7 @@
 
           <!-- <a href="#" class="icon-box glass-hover"><i class="fa-solid fa-magnifying-glass"></i></a> -->
           <a href="#" class="icon-box glass-hover"><i class="fa-regular fa-bookmark"></i></a>
+
           <a href="#" class="icon-box glass-hover"><i class="fa-regular fa-user"></i></a>
         </div>
       </header>
@@ -61,11 +68,11 @@
               <a class="link-primary" href="#">Nome do Diretor</a>
             </ul>
 
-            <h1 class="content-title">Filme</h1>
+            <h1 class="content-title">Título da Série</h1>
             <div class="content-btns">
               <button class="play-btn btn">
                 <span><i class="fa-solid fa-play"></i></span>
-                <span>Assistir Episódio 1</span>
+                <span>Assistir Nome do Episódio 1</span>
               </button>
               
               <button class="content-btn btn">
@@ -104,10 +111,10 @@
               </div> -->
 
               <div class="info-wrapper">
-                <span class="content-length">2h 10min</span>
+                <span class="content-length">12 Nome do episódios</span>
                 <span class="content-date">2024</span>
                 <div class="age-rating">
-                  <img src="./assets/+16.svg" class="cover">
+                  <img src="./assets/L.svg" class="cover">
                 </div>
               </div>
             </div>
@@ -121,7 +128,7 @@
         
         <section class="extra">
           <nav class="extra-nav">
-            <button class="nav-btn" active=""><span>Episódios</span></button>  
+            <button class="nav-btn" active=""><span>Nome do Episódios</span></button>  
             <button class="nav-btn"><span>Relacionados</span></button>  
             <button class="nav-btn"><span>Detalhes</span></button>  
           </nav>
@@ -137,13 +144,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -164,13 +170,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -191,13 +196,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -218,13 +222,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -245,13 +248,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -272,13 +274,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -299,13 +300,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -326,13 +326,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -353,13 +352,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -380,13 +378,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -407,13 +404,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -434,13 +430,12 @@
 
               <div class="ep-info">
                 <span class="ep-title">
-                  Episódio 
+                  Nome do Episódio 
                 </span>
-
                 
                 <span>22 min</span>
 
-                <div class="ep-age-rating"><img src="./assets/+16.svg" alt=""></div>
+                <div class="ep-age-rating"><img src="./assets/L.svg" alt=""></div>
                   
                 <button class="content-btn btn">
                   <span><i class="fa-solid fa-arrow-down"></i></span>
@@ -510,6 +505,7 @@
       </footer>
     </main>
   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script></script>
   </body>
 </html>
