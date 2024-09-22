@@ -1,299 +1,688 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Premium</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
-    <link rel="stylesheet" href="/styles/shared/general.css" />
-    <link rel="stylesheet" href="/styles/shared/header.css" />
-    <link rel="stylesheet" href="/styles/shared/footer.css" />
-    <link rel="stylesheet" href="/styles/home.css"/>
-    <script src="https://kit.fontawesome.com/fde0a8fd48.js" crossorigin="anonymous"></script>
+	<title>Premium</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+	<link rel="stylesheet" href="/styles/shared/general.css" />
+	<link rel="stylesheet" href="/styles/shared/header.css" />
+	<link rel="stylesheet" href="/styles/shared/footer.css" />
+	<link rel="stylesheet" href="/styles/home.css"/>
+	<script src="https://kit.fontawesome.com/fde0a8fd48.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="fade-out"></div>
-    <main>
-
-      <!-- BARRA DE NAVEGAÇÃO -->
-      <header class="header">
-        <div class="logo-wrapper">
-          <a class="logo-link" href="home.html">
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815 149.66">
-            <g fill="currentColor">
-              <path d="M0,2.66h20.6l2.65,22.23C29.1,10.07,41.77,0,60.68,0c28.17,0,46.32,20.33,46.32,57v2.66c0,35.91-19.47,54.53-46.7,54.53-17.96,0-30.06-8.17-36.3-21.47v56.94H0V2.66ZM82,59.17v-2.29c0-23.49-12.03-35.9-29.02-35.9-18.14,0-29.98,13.94-29.98,35.52v1.91c0,21.19,11.27,34.75,29.4,34.75s29.6-12.22,29.6-33.99Z"/>
-              <path d="M126,2.66h19.98l3.4,26.99c4.4-18.8,16.6-27.99,38.19-27.99h6.43v25h-10.94c-25.92,0-32.06,9.02-32.06,34.02v50.98h-25V2.66Z"/>
-              <path d="M201,59.88v-2.64c0-34.48,21.65-56.53,55.64-56.53,37.6,0,53.36,26.76,53.36,54.45v11.49h-84.31c2.09,17.71,13.1,27.51,31.14,27.51,13.1,0,21.08-5.28,24.88-14.51h26.78c-6.46,21.86-24.12,34.86-52.6,34.86-36.84,0-54.88-21.1-54.88-54.64ZM226.81,46.66h59.28c-1.71-16.72-10.83-27.17-28.31-27.17s-28.31,9.88-30.97,27.17Z"/>
-              <path d="M480,2.66h25v109h-25V2.66Z"/>
-              <path d="M528,70.15V2.66h25v60.8c0,17.1,5.31,28.88,22.17,28.88s24.83-13.49,24.83-32.87V2.66h25v109h-20.88l-2.28-20.85c-5.69,14.22-17.46,23.13-35.31,23.13-26.01,0-38.53-16.68-38.53-43.79Z"/>
-              <path d="M776.5.31c-17.67,0-29.83,8.93-35.34,22.8-4.75-14.25-15.77-22.8-34.39-22.8-17.29,0-28.88,8.93-34.58,22.61l-2.28-20.26h-20.9v109h25v-58.52c0-18.81,7.76-31.73,23.85-31.73s22.15,12.35,22.15,27.74v62.51h25v-61.94c0-16.53,6.71-28.31,23-28.31s23,11.59,23,28.69v64.73h24V43.82c.26-27.17-12.85-43.51-38.5-43.51Z"/>
-              <polygon points="457.9 2.83 457.9 112.66 433.94 112.66 433.94 39.92 429.91 46.73 420.9 58.54 408.42 75.12 395.98 58.07 390.84 58.07 378.13 75.65 365.51 58.69 356.32 46.52 353.06 40.89 353.06 112.66 329.1 112.66 329.1 2.83 352.72 2.83 375.51 33.75 390.84 12.55 395.98 12.55 411.37 33.62 434.18 2.83 457.9 2.83"/>
-            </g>
-            </svg>
-          </a>
-        </div>
-
-        <i id="menu-icon" class="fa-solid fa-bars"></i>
-
-        <nav class="navbar">
-          <a class="nav-link" href="home.html" active="true"><span class="text-xxl">Início</span></a>
-          <a class="nav-link" href="#"><span class="text-xxl">Filmes</span></a>
-          <a class="nav-link" href="#"><span class="text-xxl">Séries</span></a>
-        </nav>
-
-        <div class="header-icons">
-          <div class="search-container icon-box glass-hover">
-            <input class="search-bar" type="text" placeholder="Buscar filmes ou séries">
-            <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
-
-          <!-- <a href="#" class="icon-box glass-hover"><i class="fa-solid fa-magnifying-glass"></i></a> -->
-          <a href="#" class="icon-box glass-hover"><i class="fa-regular fa-bookmark"></i></a>
-
-          <a href="#" class="icon-box glass-hover"><i class="fa-regular fa-user"></i></a>
-        </div>
-      </header>
-
-
-      <!-- BLOCO DO FILME -->
-      <section class="page-content">
-
-        <section class="hero">
-          <h1 class="content-title">Duna 2</h1>
-            <div class="content-btns">
-              <button class="play-btn btn">
-                <span><i class="fa-solid fa-play"></i></span>
-                <span>Assistir Filme</span>
-              </button>
-              
-              <button class="content-btn btn">
-                <span><i class="fa-solid fa-film"></i></span>
-              </button>
-
-              <button class="content-btn btn">
-                <span><i class="fa-solid fa-plus"></i></span>
-              </button>
-            </div>
-        </section>
-
-
-        <section class="home-row">
-          <span class="row-title">Recomendações para Você</span>
-          
-          <div class="content-slider">
-            <a href="movie.html"><img src="https://a.ltrbxd.com/resized/film-poster/4/9/7/6/3/1/497631-spider-man-across-the-spider-verse-0-1000-0-1500-crop.jpg?v=f2acbf1b8a" alt="Content Cover"></a>
-
-            <a href=""><img src="https://a.ltrbxd.com/resized/film-poster/5/1/5/2/3/51523-city-of-god-0-1000-0-1500-crop.jpg?v=7517ea94ce" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/hf/o9/fn/p4/adogswill-ms-0-1000-0-1500-crop.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/6/1/7/4/4/3/617443-dune-part-two-0-1000-0-1500-crop.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/6/2/8/7/0/462870-deadpool-wolverine-0-1000-0-1500-crop.jpg?v=1aa778d2c6" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/9/2/1/5/7/8/921578-inside-out-2-0-1000-0-1500-crop.jpg?v=efa25e5cca" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/6/1/9/5/1/0/619510-the-hunger-games-the-ballad-of-songbirds-snakes-0-1000-0-1500-crop.jpg?v=180f24b89f" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/alternative-poster/7/1/0/3/5/2/p/1eqYQyHr5bTXv6jtrQHN26LbBFv-0-1000-0-1500-crop.jpg?v=d8da349268" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-1000-0-1500-crop.jpg?v=1b83dc7a71" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/7/5/5/5/6/4/755564-the-holdovers-0-1000-0-1500-crop.jpg?v=99bbdd8955" alt="Content Cover"></a>
-          </div>
-        </section>
-
-        <section class="home-row">
-          <span class="row-title">Continuar assistindo</span>
-        
-          <div class="content-slider">
-            <a href="show.html"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-23-6242c02e769ef__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/alternative-poster/7/8/4/3/2/8/p/bAFmcrCpXsJis5q0aaXvCz3dTiX-0-1000-0-1500-crop.jpg?v=0d462642e3" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/8/2/2/0/9/3/822093-anatomy-of-a-fall-0-1000-0-1500-crop.jpg?v=4efab8aedc" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/5/7/8/7/7/4/578774-kingdom-of-the-planet-of-the-apes-0-1000-0-1500-crop.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/8v/f1/qw/aa/bg7K6VtUG7Ew70gQj6SSroD5d4R-0-1000-0-1500-crop.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/7/0/6/0/8/3/706083-wonka-0-1000-0-1500-crop.jpg?v=d4bd6afd7f" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/7/6/4/8/9/0/764890-the-iron-claw-0-1000-0-1500-crop.jpg?v=321a07c4f2" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/5/4/2/0/0/5/542005-teenage-mutant-ninja-turtles-mutant-mayhem-0-1000-0-1500-crop.jpg?v=1b29c3c041" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/9/5/2/8/1/2/952812-american-fiction-0-1000-0-1500-crop.jpg?v=fbc2c6daf1" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/7/0/4/8/47048-the-exorcist-0-1000-0-1500-crop.jpg?v=897c9aa211" alt="Content Cover"></a>
-          </div>
-        </section>
-        
-        <section class="home-row">
-          <span class="row-title">Melhores séries</span>
-        
-          <div class="content-slider">
-            <a href="#"><img src="https://i.pinimg.com/736x/e4/6a/57/e46a5791f5dfbf78ba6a5c0e56dc497e.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/2c/97/3b/2c973ba951f5068992cb6c814704445b.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/we/60/gr/ru/LOVE%20DEATH-0-1000-0-1500-crop.jpg?v=2df580b44a" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/fb/38/8e/fb388e9d77de6870698784a0af933c0e.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/d0/28/8b/d0288b5c796334301d01c36493f5205b.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/736x/12/89/06/1289062d273498c618229deaf74338e9.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/90/76/ef/9076eff980900fb73a3ebcb2ddfc170e.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/99/7e/8b/997e8b577cef7695a2e6e82b309147e2.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/20/0d/d4/200dd4685d86de8a7dc8c2edca19c80d.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/d1/4e/79/d14e790460639ba28131018df6e95e09.jpg" alt="Content Cover"></a>
-          </div>
-        </section>
-
-        <section class="home-row">
-          <span class="row-title">Filmes de terror</span>
-          
-          <div class="content-slider">
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/8v/f1/qw/aa/bg7K6VtUG7Ew70gQj6SSroD5d4R-0-1000-0-1500-crop.jpg" alt="Content Cover"></a>
-            
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/6/8/2/5/4/7/682547-nope-0-1000-0-1500-crop.jpg?v=d6a6158cc3" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/3/7/0/1/7/8/370178-the-first-omen-0-1000-0-1500-crop.jpg?v=ee3160fca0" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/7s/m2/bw/d0/caoYMcjUamGoBVy65i1AHJBvdzw-0-1000-0-1500-crop.jpg?v=88d9d6cce4" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/3/5/3/1/1/7/353117-get-out-0-1000-0-1500-crop.jpg?v=136acec030" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/t3/qn/vs/p5/s5fH3GqFcHbi2F0NSBSh4KRNTc0-0-1000-0-1500-crop.jpg?v=01880125bb" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/7/0/4/8/47048-the-exorcist-0-1000-0-1500-crop.jpg?v=897c9aa211" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-1000-0-1500-crop.jpg?v=ee97005537" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/w3/47/76/am/6uDpMsdn8bbZScDptbika5JEtSH-0-1000-0-1500-crop.jpg?v=ee603d8e3b" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/6/7/7/5/7/1/677571-the-black-phone-0-1000-0-1500-crop.jpg?v=45a499c08d" alt="Content Cover"></a>
-          </div>
-        </section>
-
-        <section class="home-row">
-          <span class="row-title">Desenhos animados</span>
-        
-          <div class="content-slider">
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-45-6242f05ae46e7__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/originals/c5/b5/d1/c5b5d18eae64dbfea483cc2752add3df.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-16-6242bd8ef0444__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-28-6242c166a52cc__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2023/09/65128ea8c3b6e_cartoon-shows.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-23-6242c02e769ef__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-4-6242afae9e0ce__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-48-6242f117308fd__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-56-6242fe199727c__700.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/7/0/4/8/47048-the-exorcist-0-1000-0-1500-crop.jpg?v=897c9aa211" alt="Content Cover"></a>
-          </div>
-        </section>
-
-        <section class="home-row">
-          <span class="row-title">Sua Lista</span>
-        
-          <div class="content-slider">
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/xk/25/lu/0m/mi2Axov7Hy20wieoGfrbqDWLjSr-0-1000-0-1500-crop.jpg?v=dd1e90619a" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/g4/4m/0c/6s/rD8SvOTCCJ2VIpIV7GUwUKD1Kzc-0-1000-0-1500-crop.jpg?v=e780d1b7d3" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/87/21/46/872146374c2ab39530a7893063515b59.jpg" alt="Content Cover"></a>
-            
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/7/4/4/7/4/474474-everything-everywhere-all-at-once-0-1000-0-1500-crop.jpg?v=281f1a041e" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/6/2/8/7/0/462870-deadpool-wolverine-0-1000-0-1500-crop.jpg?v=1aa778d2c6" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/bb/19/dd/bb19dd3b624ad5d9e625584a7236bcf5.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/0/6/7/7/5/406775-joker-0-1000-0-1500-crop.jpg?v=e4ea7f98cc" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://i.pinimg.com/564x/13/27/1f/13271ffeb3c19539e0710f1c08e93612.jpg" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/film-poster/4/9/0/6/2/49062-howl-s-moving-castle-0-1000-0-1500-crop.jpg?v=fde81bda52" alt="Content Cover"></a>
-
-            <a href="#"><img src="https://a.ltrbxd.com/resized/sm/upload/xx/io/jp/45/the-truman-show-0-1000-0-1500-crop.jpg?v=704ba393f7" alt="Content Cover"></a>
-          </div>
-        </section>
-
-      </section>
-
-      <footer class="footer">
-        <div class="footer-wrapper">
-          <div class="footer-container">
-            <div>
-              <ul>
-                <li><a class="link-primary" href="#">Perguntas frequentes</a></li>
-                <li><a class="link-primary" href="#">Formas de assistir</a></li>
-                <li><a class="link-primary" href="#">Informações corporativas</a></li>
-                <li><a class="link-primary" href="#">Exclusivos do catálogo</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <ul>
-                <li><a class="link-primary" href="#">Central de ajuda</a></li>
-                <li><a class="link-primary" href="#">Carreiras</a></li>
-                <li><a class="link-primary" href="#">Termos de uso</a></li>
-                <li><a class="link-primary" href="#">Entre em contato</a></li>
-              </ul>
-            </div>
-            <div>
-                <ul>
-                <li><a class="link-primary" href="#">Conta</a></li>
-                <li><a class="link-primary" href="#">Resgatar cartão pré-pago</a></li>
-                <li><a class="link-primary" href="#">Privacidade</a></li>
-                <li><a class="link-primary" href="#">Teste de velocidade</a></li>
-
-                </ul>
-            </div>
-            <div>
-              <ul>
-                <li><a class="link-primary" href="#">Compras de cartão pré-pago</a></li>
-                <li><a class="link-primary" href="#">Preferência de cookies</a></li>
-                <li><a class="link-primary" href="#">Avisos legais</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="logo-container">
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815 149.66">
-              <g fill="currentColor">
-                <path d="M0,2.66h20.6l2.65,22.23C29.1,10.07,41.77,0,60.68,0c28.17,0,46.32,20.33,46.32,57v2.66c0,35.91-19.47,54.53-46.7,54.53-17.96,0-30.06-8.17-36.3-21.47v56.94H0V2.66ZM82,59.17v-2.29c0-23.49-12.03-35.9-29.02-35.9-18.14,0-29.98,13.94-29.98,35.52v1.91c0,21.19,11.27,34.75,29.4,34.75s29.6-12.22,29.6-33.99Z"/>
-                <path d="M126,2.66h19.98l3.4,26.99c4.4-18.8,16.6-27.99,38.19-27.99h6.43v25h-10.94c-25.92,0-32.06,9.02-32.06,34.02v50.98h-25V2.66Z"/>
-                <path d="M201,59.88v-2.64c0-34.48,21.65-56.53,55.64-56.53,37.6,0,53.36,26.76,53.36,54.45v11.49h-84.31c2.09,17.71,13.1,27.51,31.14,27.51,13.1,0,21.08-5.28,24.88-14.51h26.78c-6.46,21.86-24.12,34.86-52.6,34.86-36.84,0-54.88-21.1-54.88-54.64ZM226.81,46.66h59.28c-1.71-16.72-10.83-27.17-28.31-27.17s-28.31,9.88-30.97,27.17Z"/>
-                <path d="M480,2.66h25v109h-25V2.66Z"/>
-                <path d="M528,70.15V2.66h25v60.8c0,17.1,5.31,28.88,22.17,28.88s24.83-13.49,24.83-32.87V2.66h25v109h-20.88l-2.28-20.85c-5.69,14.22-17.46,23.13-35.31,23.13-26.01,0-38.53-16.68-38.53-43.79Z"/>
-                <path d="M776.5.31c-17.67,0-29.83,8.93-35.34,22.8-4.75-14.25-15.77-22.8-34.39-22.8-17.29,0-28.88,8.93-34.58,22.61l-2.28-20.26h-20.9v109h25v-58.52c0-18.81,7.76-31.73,23.85-31.73s22.15,12.35,22.15,27.74v62.51h25v-61.94c0-16.53,6.71-28.31,23-28.31s23,11.59,23,28.69v64.73h24V43.82c.26-27.17-12.85-43.51-38.5-43.51Z"/>
-                <polygon points="457.9 2.83 457.9 112.66 433.94 112.66 433.94 39.92 429.91 46.73 420.9 58.54 408.42 75.12 395.98 58.07 390.84 58.07 378.13 75.65 365.51 58.69 356.32 46.52 353.06 40.89 353.06 112.66 329.1 112.66 329.1 2.83 352.72 2.83 375.51 33.75 390.84 12.55 395.98 12.55 411.37 33.62 434.18 2.83 457.9 2.83"/>
-              </g>
-            </svg>
-            <span>© 2024 Premium. All rights reserved.</span>
-          </div>
-        </div>
-      </footer>
-    </main>
+	<div class="fade-out"></div>
+	<main>
+
+	  <!-- BARRA DE NAVEGAÇÃO -->
+	  <header class="header">
+		<div class="logo-wrapper">
+		  <a class="logo-link" href="home.html">
+			<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815 149.66">
+			<g fill="currentColor">
+			  <path d="M0,2.66h20.6l2.65,22.23C29.1,10.07,41.77,0,60.68,0c28.17,0,46.32,20.33,46.32,57v2.66c0,35.91-19.47,54.53-46.7,54.53-17.96,0-30.06-8.17-36.3-21.47v56.94H0V2.66ZM82,59.17v-2.29c0-23.49-12.03-35.9-29.02-35.9-18.14,0-29.98,13.94-29.98,35.52v1.91c0,21.19,11.27,34.75,29.4,34.75s29.6-12.22,29.6-33.99Z"/>
+			  <path d="M126,2.66h19.98l3.4,26.99c4.4-18.8,16.6-27.99,38.19-27.99h6.43v25h-10.94c-25.92,0-32.06,9.02-32.06,34.02v50.98h-25V2.66Z"/>
+			  <path d="M201,59.88v-2.64c0-34.48,21.65-56.53,55.64-56.53,37.6,0,53.36,26.76,53.36,54.45v11.49h-84.31c2.09,17.71,13.1,27.51,31.14,27.51,13.1,0,21.08-5.28,24.88-14.51h26.78c-6.46,21.86-24.12,34.86-52.6,34.86-36.84,0-54.88-21.1-54.88-54.64ZM226.81,46.66h59.28c-1.71-16.72-10.83-27.17-28.31-27.17s-28.31,9.88-30.97,27.17Z"/>
+			  <path d="M480,2.66h25v109h-25V2.66Z"/>
+			  <path d="M528,70.15V2.66h25v60.8c0,17.1,5.31,28.88,22.17,28.88s24.83-13.49,24.83-32.87V2.66h25v109h-20.88l-2.28-20.85c-5.69,14.22-17.46,23.13-35.31,23.13-26.01,0-38.53-16.68-38.53-43.79Z"/>
+			  <path d="M776.5.31c-17.67,0-29.83,8.93-35.34,22.8-4.75-14.25-15.77-22.8-34.39-22.8-17.29,0-28.88,8.93-34.58,22.61l-2.28-20.26h-20.9v109h25v-58.52c0-18.81,7.76-31.73,23.85-31.73s22.15,12.35,22.15,27.74v62.51h25v-61.94c0-16.53,6.71-28.31,23-28.31s23,11.59,23,28.69v64.73h24V43.82c.26-27.17-12.85-43.51-38.5-43.51Z"/>
+			  <polygon points="457.9 2.83 457.9 112.66 433.94 112.66 433.94 39.92 429.91 46.73 420.9 58.54 408.42 75.12 395.98 58.07 390.84 58.07 378.13 75.65 365.51 58.69 356.32 46.52 353.06 40.89 353.06 112.66 329.1 112.66 329.1 2.83 352.72 2.83 375.51 33.75 390.84 12.55 395.98 12.55 411.37 33.62 434.18 2.83 457.9 2.83"/>
+			</g>
+			</svg>
+		  </a>
+		</div>
+
+		<i id="menu-icon" class="fa-solid fa-bars"></i>
+
+		<nav class="navbar">
+		  <a class="nav-link" href="home.html" active="true"><span class="text-xxl">Início</span></a>
+		  <a class="nav-link" href="#"><span class="text-xxl">Filmes</span></a>
+		  <a class="nav-link" href="#"><span class="text-xxl">Séries</span></a>
+		</nav>
+
+		<div class="header-icons">
+		  <div class="search-container icon-box glass-hover">
+			<input class="search-bar" type="text" placeholder="Buscar filmes ou séries">
+			<button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+		  </div>
+
+		  <!-- <a href="#" class="icon-box glass-hover"><i class="fa-solid fa-magnifying-glass"></i></a> -->
+		  <a href="#" class="icon-box glass-hover"><i class="fa-regular fa-bookmark"></i></a>
+
+		  <a href="#" class="icon-box glass-hover"><i class="fa-regular fa-user"></i></a>
+		</div>
+	  </header>
+
+
+	  <!-- BLOCO DO FILME -->
+	  <section class="page-content">
+
+		<section class="hero">
+		  <h1 class="content-title">Duna 2</h1>
+			<div class="content-btns">
+			  <button class="play-btn btn">
+				<span><i class="fa-solid fa-play"></i></span>
+				<span>Assistir Filme</span>
+			  </button>
+			  
+			  <button class="content-btn btn">
+				<span><i class="fa-solid fa-film"></i></span>
+			  </button>
+
+			  <button class="content-btn btn">
+				<span><i class="fa-solid fa-plus"></i></span>
+			  </button>
+			</div>
+		</section>
+
+
+		<section class="home-row">
+		  <span class="row-title">Recomendações para Você</span>
+		  
+		  <div class="content-slider">
+			<div class="content-card">
+			  <a class="card-img" href="movie.html">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/9/7/6/3/1/497631-spider-man-across-the-spider-verse-0-1000-0-1500-crop.jpg?v=f2acbf1b8a" alt="Content Cover">
+			  </a>
+			  
+			  <div class="card-info">
+				<div>
+				  <span class="card-title">Homem-Aranha: Através do Aranhaverso</span>
+				</div>
+
+				<button class="play-btn btn">
+				  <span><i class="fa-solid fa-play"></i></span>
+				  <span>Assistir Filme</span>
+				</button>
+				<div class="card-btns">
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-film"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-plus"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-arrow-down"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-share-nodes"></i></span>
+				  </button>
+				</div>
+				<div class="card-row">
+				  <div class="info-wrapper">
+					<span class="content-length">2h 20min</span>
+					<span class="content-date">2024</span>
+					<div class="age-rating">
+					  <img src="./assets/+16.svg" class="cover">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/hf/o9/fn/p4/adogswill-ms-0-1000-0-1500-crop.jpg" alt="Content Cover">
+			  </a>
+			  
+			  <div class="card-info">
+				<div>
+				  <span class="card-title">Auto da Compadecida</span>
+				</div>
+
+				<button class="play-btn btn">
+				  <span><i class="fa-solid fa-play"></i></span>
+				  <span>Assistir Filme</span>
+				</button>
+				<div class="card-btns">
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-film"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-plus"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-arrow-down"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-share-nodes"></i></span>
+				  </button>
+				</div>
+				<div class="card-row">
+				  <div class="info-wrapper">
+					<span class="content-length">2h</span>
+					<span class="content-date">2024</span>
+					<div class="age-rating">
+					  <img src="./assets/+16.svg" class="cover">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="content-card">
+			  <a class="card-img" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/5/1/5/2/3/51523-city-of-god-0-1000-0-1500-crop.jpg?v=7517ea94ce" alt="Content Cover">
+			  </a>
+			  
+			  <div class="card-info">
+				<div>
+				  <span class="card-title">Cidade de Deus</span>
+				</div>
+
+				<button class="play-btn btn">
+				  <span><i class="fa-solid fa-play"></i></span>
+				  <span>Assistir Filme</span>
+				</button>
+				<div class="card-btns">
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-film"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-plus"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-arrow-down"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-share-nodes"></i></span>
+				  </button>
+				</div>
+				<div class="card-row">
+				  <div class="info-wrapper">
+					<span class="content-length">2h</span>
+					<span class="content-date">2024</span>
+					<div class="age-rating">
+					  <img src="./assets/+16.svg" class="cover">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/6/1/7/4/4/3/617443-dune-part-two-0-1000-0-1500-crop.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/6/2/8/7/0/462870-deadpool-wolverine-0-1000-0-1500-crop.jpg?v=1aa778d2c6" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/9/2/1/5/7/8/921578-inside-out-2-0-1000-0-1500-crop.jpg?v=efa25e5cca" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/6/1/9/5/1/0/619510-the-hunger-games-the-ballad-of-songbirds-snakes-0-1000-0-1500-crop.jpg?v=180f24b89f" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/alternative-poster/7/1/0/3/5/2/p/1eqYQyHr5bTXv6jtrQHN26LbBFv-0-1000-0-1500-crop.jpg?v=d8da349268" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-1000-0-1500-crop.jpg?v=1b83dc7a71" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/7/5/5/5/6/4/755564-the-holdovers-0-1000-0-1500-crop.jpg?v=99bbdd8955" alt="Content Cover">
+			  </a>
+			</div>
+		  </div>
+		</section>
+
+		<section class="home-row">
+		  <span class="row-title">Continuar assistindo</span>
+		
+		  <div class="content-slider">
+						
+			<div class="content-card">
+			  <a class="card-img" href="show.html">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-23-6242c02e769ef__700.jpg" alt="Content Cover">
+			  </a>
+			  
+			  <div class="card-info">
+				<div>
+				  <span class="card-title">Título da Série</span>
+				</div>
+
+				<button class="play-btn btn">
+				  <span><i class="fa-solid fa-play"></i></span>
+				  <span>Assistir Episódio 1</span>
+				</button>
+				<div class="card-btns">
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-film"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-plus"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-arrow-down"></i></span>
+				  </button>
+	
+				  <button class="content-btn btn">
+					<span><i class="fa-solid fa-share-nodes"></i></span>
+				  </button>
+				</div>
+				<div class="card-row">
+				  <div class="info-wrapper">
+					<span class="content-length">24 min</span>
+					<span class="content-date">2016</span>
+					<div class="age-rating">
+					  <img src="./assets/+16.svg" class="cover">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/alternative-poster/7/8/4/3/2/8/p/bAFmcrCpXsJis5q0aaXvCz3dTiX-0-1000-0-1500-crop.jpg?v=0d462642e3" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/8/2/2/0/9/3/822093-anatomy-of-a-fall-0-1000-0-1500-crop.jpg?v=4efab8aedc" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/5/7/8/7/7/4/578774-kingdom-of-the-planet-of-the-apes-0-1000-0-1500-crop.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/8v/f1/qw/aa/bg7K6VtUG7Ew70gQj6SSroD5d4R-0-1000-0-1500-crop.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/7/0/6/0/8/3/706083-wonka-0-1000-0-1500-crop.jpg?v=d4bd6afd7f" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/7/6/4/8/9/0/764890-the-iron-claw-0-1000-0-1500-crop.jpg?v=321a07c4f2" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/5/4/2/0/0/5/542005-teenage-mutant-ninja-turtles-mutant-mayhem-0-1000-0-1500-crop.jpg?v=1b29c3c041" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/9/5/2/8/1/2/952812-american-fiction-0-1000-0-1500-crop.jpg?v=fbc2c6daf1" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/7/0/4/8/47048-the-exorcist-0-1000-0-1500-crop.jpg?v=897c9aa211" alt="Content Cover">
+			  </a>
+			</div>
+		  </div>
+		</section>
+		
+		<section class="home-row">
+		  <span class="row-title">Melhores séries</span>
+		
+		  <div class= "content-slider">
+				<div class="content-card">
+				<a class="card-img-2" href="#">
+						<img src="https://i.pinimg.com/736x/e4/6a/57/e46a5791f5dfbf78ba6a5c0e56dc497e.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/564x/2c/97/3b/2c973ba951f5068992cb6c814704445b.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://a.ltrbxd.com/resized/sm/upload/we/60/gr/ru/LOVE%20DEATH-0-1000-0-1500-crop.jpg?v=2df580b44a" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/564x/fb/38/8e/fb388e9d77de6870698784a0af933c0e.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/564x/d0/28/8b/d0288b5c796334301d01c36493f5205b.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/736x/12/89/06/1289062d273498c618229deaf74338e9.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/564x/90/76/ef/9076eff980900fb73a3ebcb2ddfc170e.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/564x/99/7e/8b/997e8b577cef7695a2e6e82b309147e2.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/564x/20/0d/d4/200dd4685d86de8a7dc8c2edca19c80d.jpg" alt="Content Cover">
+					</a>
+				</div>
+
+				<div class="content-card">
+					<a class="card-img-2" href="#">
+					<img src="https://i.pinimg.com/564x/d1/4e/79/d14e790460639ba28131018df6e95e09.jpg" alt="Content Cover">
+					</a>
+				</div>
+		  </div>
+		</section>
+
+		<section class="home-row">
+		  <span class="row-title">Filmes de terror</span>
+		  
+		  <div class="content-slider">
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/8v/f1/qw/aa/bg7K6VtUG7Ew70gQj6SSroD5d4R-0-1000-0-1500-crop.jpg" alt="Content Cover">
+			  </a>
+			</div>
+			
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/6/8/2/5/4/7/682547-nope-0-1000-0-1500-crop.jpg?v=d6a6158cc3" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/3/7/0/1/7/8/370178-the-first-omen-0-1000-0-1500-crop.jpg?v=ee3160fca0" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/7s/m2/bw/d0/caoYMcjUamGoBVy65i1AHJBvdzw-0-1000-0-1500-crop.jpg?v=88d9d6cce4" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/3/5/3/1/1/7/353117-get-out-0-1000-0-1500-crop.jpg?v=136acec030" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/t3/qn/vs/p5/s5fH3GqFcHbi2F0NSBSh4KRNTc0-0-1000-0-1500-crop.jpg?v=01880125bb" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/7/0/4/8/47048-the-exorcist-0-1000-0-1500-crop.jpg?v=897c9aa211" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-1000-0-1500-crop.jpg?v=ee97005537" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/w3/47/76/am/6uDpMsdn8bbZScDptbika5JEtSH-0-1000-0-1500-crop.jpg?v=ee603d8e3b" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/6/7/7/5/7/1/677571-the-black-phone-0-1000-0-1500-crop.jpg?v=45a499c08d" alt="Content Cover">
+			  </a>
+			</div>
+		  </div>
+		</section>
+
+		<section class="home-row">
+		  <span class="row-title">Desenhos animados</span>
+		
+		  <div class="content-slider">
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-45-6242f05ae46e7__700.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://i.pinimg.com/originals/c5/b5/d1/c5b5d18eae64dbfea483cc2752add3df.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-16-6242bd8ef0444__700.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-28-6242c166a52cc__700.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2023/09/65128ea8c3b6e_cartoon-shows.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-23-6242c02e769ef__700.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-4-6242afae9e0ce__700.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-48-6242f117308fd__700.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/cartoon-shows-56-6242fe199727c__700.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/7/0/4/8/47048-the-exorcist-0-1000-0-1500-crop.jpg?v=897c9aa211" alt="Content Cover">
+			  </a>
+			</div>
+		  </div>
+		</section>
+
+		<section class="home-row">
+		  <span class="row-title">Sua Lista</span>
+		
+		  <div class="content-slider">
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/xk/25/lu/0m/mi2Axov7Hy20wieoGfrbqDWLjSr-0-1000-0-1500-crop.jpg?v=dd1e90619a" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/g4/4m/0c/6s/rD8SvOTCCJ2VIpIV7GUwUKD1Kzc-0-1000-0-1500-crop.jpg?v=e780d1b7d3" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://i.pinimg.com/564x/87/21/46/872146374c2ab39530a7893063515b59.jpg" alt="Content Cover">
+			  </a>
+			</div>
+			
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/7/4/4/7/4/474474-everything-everywhere-all-at-once-0-1000-0-1500-crop.jpg?v=281f1a041e" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/6/2/8/7/0/462870-deadpool-wolverine-0-1000-0-1500-crop.jpg?v=1aa778d2c6" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://i.pinimg.com/564x/bb/19/dd/bb19dd3b624ad5d9e625584a7236bcf5.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/0/6/7/7/5/406775-joker-0-1000-0-1500-crop.jpg?v=e4ea7f98cc" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://i.pinimg.com/564x/13/27/1f/13271ffeb3c19539e0710f1c08e93612.jpg" alt="Content Cover">
+			  </a>
+			</div>
+
+			<div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/film-poster/4/9/0/6/2/49062-howl-s-moving-castle-0-1000-0-1500-crop.jpg?v=fde81bda52" alt="Content Cover">
+			  </a>
+			</div>
+
+		  <div class="content-card">
+			  <a class="card-img-2" href="#">
+				<img src="https://a.ltrbxd.com/resized/sm/upload/xx/io/jp/45/the-truman-show-0-1000-0-1500-crop.jpg?v=704ba393f7" alt="Content Cover">
+			  </a>
+			</div>
+		  </div>
+		</section>
+
+	  </section>
+
+	  <footer class="footer">
+		<div class="footer-wrapper">
+		  <div class="footer-container">
+			<div>
+			  <ul>
+				<li><a class="link-primary" href="#">Perguntas frequentes</a></li>
+				<li><a class="link-primary" href="#">Formas de assistir</a></li>
+				<li><a class="link-primary" href="#">Informações corporativas</a></li>
+				<li><a class="link-primary" href="#">Exclusivos do catálogo</a></li>
+			  </ul>
+			</div>
+
+			<div>
+			  <ul>
+				<li><a class="link-primary" href="#">Central de ajuda</a></li>
+				<li><a class="link-primary" href="#">Carreiras</a></li>
+				<li><a class="link-primary" href="#">Termos de uso</a></li>
+				<li><a class="link-primary" href="#">Entre em contato</a></li>
+			  </ul>
+			</div>
+			<div>
+				<ul>
+				<li><a class="link-primary" href="#">Conta</a></li>
+				<li><a class="link-primary" href="#">Resgatar cartão pré-pago</a></li>
+				<li><a class="link-primary" href="#">Privacidade</a></li>
+				<li><a class="link-primary" href="#">Teste de velocidade</a></li>
+
+				</ul>
+			</div>
+			<div>
+			  <ul>
+				<li><a class="link-primary" href="#">Compras de cartão pré-pago</a></li>
+				<li><a class="link-primary" href="#">Preferência de cookies</a></li>
+				<li><a class="link-primary" href="#">Avisos legais</a></li>
+			  </ul>
+			</div>
+		  </div>
+
+		  <div class="logo-container">
+			<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 815 149.66">
+			  <g fill="currentColor">
+				<path d="M0,2.66h20.6l2.65,22.23C29.1,10.07,41.77,0,60.68,0c28.17,0,46.32,20.33,46.32,57v2.66c0,35.91-19.47,54.53-46.7,54.53-17.96,0-30.06-8.17-36.3-21.47v56.94H0V2.66ZM82,59.17v-2.29c0-23.49-12.03-35.9-29.02-35.9-18.14,0-29.98,13.94-29.98,35.52v1.91c0,21.19,11.27,34.75,29.4,34.75s29.6-12.22,29.6-33.99Z"/>
+				<path d="M126,2.66h19.98l3.4,26.99c4.4-18.8,16.6-27.99,38.19-27.99h6.43v25h-10.94c-25.92,0-32.06,9.02-32.06,34.02v50.98h-25V2.66Z"/>
+				<path d="M201,59.88v-2.64c0-34.48,21.65-56.53,55.64-56.53,37.6,0,53.36,26.76,53.36,54.45v11.49h-84.31c2.09,17.71,13.1,27.51,31.14,27.51,13.1,0,21.08-5.28,24.88-14.51h26.78c-6.46,21.86-24.12,34.86-52.6,34.86-36.84,0-54.88-21.1-54.88-54.64ZM226.81,46.66h59.28c-1.71-16.72-10.83-27.17-28.31-27.17s-28.31,9.88-30.97,27.17Z"/>
+				<path d="M480,2.66h25v109h-25V2.66Z"/>
+				<path d="M528,70.15V2.66h25v60.8c0,17.1,5.31,28.88,22.17,28.88s24.83-13.49,24.83-32.87V2.66h25v109h-20.88l-2.28-20.85c-5.69,14.22-17.46,23.13-35.31,23.13-26.01,0-38.53-16.68-38.53-43.79Z"/>
+				<path d="M776.5.31c-17.67,0-29.83,8.93-35.34,22.8-4.75-14.25-15.77-22.8-34.39-22.8-17.29,0-28.88,8.93-34.58,22.61l-2.28-20.26h-20.9v109h25v-58.52c0-18.81,7.76-31.73,23.85-31.73s22.15,12.35,22.15,27.74v62.51h25v-61.94c0-16.53,6.71-28.31,23-28.31s23,11.59,23,28.69v64.73h24V43.82c.26-27.17-12.85-43.51-38.5-43.51Z"/>
+				<polygon points="457.9 2.83 457.9 112.66 433.94 112.66 433.94 39.92 429.91 46.73 420.9 58.54 408.42 75.12 395.98 58.07 390.84 58.07 378.13 75.65 365.51 58.69 356.32 46.52 353.06 40.89 353.06 112.66 329.1 112.66 329.1 2.83 352.72 2.83 375.51 33.75 390.84 12.55 395.98 12.55 411.37 33.62 434.18 2.83 457.9 2.83"/>
+			  </g>
+			</svg>
+			<span>© 2024 Premium. All rights reserved.</span>
+		  </div>
+		</div>
+	  </footer>
+	</main>
   
-    <script type="module" src="./scripts/home.js"></script>
+	<script type="module" src="./scripts/home.js"></script>
 
   </body>
 </html>

@@ -39,7 +39,7 @@ main:before {
   margin-top: 0;
   height: 90vh;
 }
-.login-wrapper {
+.form-wrapper {
   align-self: center;
   width: 480px;
   height: fit-content;
@@ -51,19 +51,25 @@ main:before {
   box-shadow: 0 8px 64px 2px rgba(0, 0, 0, 0.5);
   transition: var(--transition-time);
 }
-.login-wrapper:hover{
+.form-wrapper:hover{
   scale: 1.02;
 }
-.login-wrapper form{
+.form-wrapper form{
   display: grid;
   gap: 1.25rem;
-  justify-items: center;
 }
-.login-title{
+form div{
+  display: grid;
+  gap: 4px;
+}
+.form-title{
   font-family: var(--alt-ff);
   font-size: 1.5rem;
   font-weight: 800;
   justify-self: left;
+}
+.row-info{
+  font-size: 14px;
 }
 .input-box {
   position: relative;
@@ -94,7 +100,7 @@ main:before {
   transform: translateY(-50%);
   font-size: 1.25rem;
 }
-.login-btn{
+.form-btn{
   font-family: Inter;
   font-weight: 800;
   background-color: var(--main-clr);
@@ -102,24 +108,29 @@ main:before {
   padding: 0.75rem 1.5rem;
   font-size: 1.5rem;
 }
-.login-btn:hover{
+.form-btn:hover{
   box-shadow: 0 0px 16px 2px rgba(255, 98, 0, 0.4);
   color: #fff;
   scale: 1.05;
 }
-.remember-forgot {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  font-size: .875rem;
+
+input:valid{
+  border-color: greenyellow;
 }
-.remember-forgot label input {
-  accent-color: #fff;
-  margin-right: 3px;
+
+input:invalid:not(:placeholder-shown), input:valid:not(:placeholder-shown){
+  background-size: 20px;
+  background-position: calc(100% - 16px) center;
+  background-repeat: no-repeat;
 }
-.register-link .link-primary{
-  color: var(--main-clr);
-  font-weight: 700;
+input:valid:not(:placeholder-shown){background-image: url(../assets/circle-check-solid.svg);}
+
+input:invalid:not(:placeholder-shown){
+  background-image: url(../assets/circle-xmark-solid.svg);
+  border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .row-info{
+  color: red;
 }
 
 .footer{

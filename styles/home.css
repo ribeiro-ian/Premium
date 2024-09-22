@@ -10,6 +10,7 @@ body::before{
   font-size: 1.25rem;
   font-family: var(--alt-ff);
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .home-row{
