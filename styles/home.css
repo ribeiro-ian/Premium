@@ -1,5 +1,8 @@
 body::before{
-  background-image: url("https://images.alphacoders.com/135/thumb-1920-1354224.jpeg");
+  background: url("https://images.alphacoders.com/135/thumb-1920-1354224.jpeg")
+    no-repeat
+    center top;
+  background-size: cover;
 }
 .page-content{
   margin-top: 30vh;
