@@ -51,6 +51,8 @@ body {
 body::before {
   content: "";
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   opacity: 0.7;
 }
 .fade-out,
@@ -241,11 +243,11 @@ img {
 .content-card {
   position: relative;
   display: inline-flex;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   transition: var(--transition-time);
 }
 .card-img, .card-img-2{
   display: flex;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
   
   aspect-ratio: 2 / 3;
   border-radius: 0.75rem;
@@ -404,7 +406,7 @@ img {
 }
 .ep-img {
   position: relative;
-  width: 100%;
+  width: 101%;
   background-color: var(--sec-bg-clr);
   aspect-ratio: 16 / 9;
   border-radius: 0.75rem;
@@ -417,7 +419,7 @@ img {
   left: 50%;
   display: none;
 
-  /* font-size: max(2rem,3vw); */
+  font-size: max(2rem,2vw);
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
 }
