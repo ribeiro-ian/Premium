@@ -115,7 +115,7 @@ form div{
 }
 
 input:valid{
-  border-color: greenyellow;
+  border-color: rgb(0, 255, 0);
 }
 
 input:invalid:not(:placeholder-shown), input:valid:not(:placeholder-shown){

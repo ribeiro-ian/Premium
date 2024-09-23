@@ -345,7 +345,6 @@ img {
   flex-wrap: wrap;
 
   gap: 2rem;
-  transition: var(--transition-time);
 }
 .nav-btn {
   --spacing: 0.5rem;
@@ -359,6 +358,7 @@ img {
   text-transform: uppercase;
   font-size: 1.5rem;
   color: var(--clr);
+  transition: var(--transition-time);
 }
 .nav-btn > * {
   position: relative;
